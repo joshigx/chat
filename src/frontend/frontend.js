@@ -3,8 +3,8 @@ let output = null;
 addEventListener("load", () => {
 	output = document.querySelector("#output");
 });
-
-const wsUri = `wss://${window.location.host}/`;
+const protocol = window.location.protocol === "https:" ? "wss" : "ws";
+const wsUri = `${protocol}://${window.location.host}/`;
 const websocket = new WebSocket(wsUri);
 
 let page = "login";

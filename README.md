@@ -1,1 +1,1 @@
-jghjhgj
+Das ist ein Chat

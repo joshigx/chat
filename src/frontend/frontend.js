@@ -4,7 +4,7 @@ addEventListener("load", () => {
 	output = document.querySelector("#output");
 });
 
-const wsUri = `ws://${window.location.host}/`;
+const wsUri = `wss://${window.location.host}/`;
 const websocket = new WebSocket(wsUri);
 
 let page = "login";

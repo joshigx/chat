@@ -2,5 +2,5 @@
 
 import { Server } from "./src/Server.class.js";
 
-const server = new Server(80);
+const server = new Server(8080);
 console.log(`Server läuft auf http://127.0.0.1:${server.port}`);
